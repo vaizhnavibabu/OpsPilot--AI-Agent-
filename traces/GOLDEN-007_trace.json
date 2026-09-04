@@ -1,0 +1,44 @@
+{
+  "ticket_id": "GOLDEN-007",
+  "ticket_text": "How to perform an account password recovery",
+  "intent": "access",
+  "intent_confidence": 0.1889433619748644,
+  "escalation": 0,
+  "escalation_probability": 0.25326032861432124,
+  "retrieved_documents": [
+    {
+      "source": "password_policy.md",
+      "text": "# Password Policy\n\n## Purpose\n\nThis policy explains how customers can recover access to their account.\n\n## Allowed\n\n- Provide password reset instructions.\n- Explain account recovery steps.\n- Direct the customer to the normal login recovery process.\n\n## Restricted\n\n- Do not request the customer's password.\n- Do not disclose authentication secrets.\n- Do not bypass account security controls.\n\n## Escalation\n\nEscalate the case when the customer reports suspicious account activity.",
+      "score": 0.6040996313095093
+    }
+  ],
+  "draft": "The customer appears to have an account access problem. Provide the standard password recovery process and avoid requesting sensitive authentication information. Relevant policy: password_policy.md",
+  "critic_status": "PASS",
+  "critic_reason": "Draft passed basic policy checks.",
+  "hitl_required": false,
+  "final_route": "RECOMMEND",
+  "trace": [
+    {
+      "step": "ticket_received",
+      "status": "completed"
+    },
+    {
+      "step": "planning_and_tools",
+      "intent": "access",
+      "escalation": 0
+    },
+    {
+      "step": "draft_created",
+      "status": "completed"
+    },
+    {
+      "step": "critic",
+      "status": "PASS"
+    },
+    {
+      "step": "routing",
+      "route": "RECOMMEND"
+    }
+  ],
+  "latency_sec": 0.031150102615356445
+}

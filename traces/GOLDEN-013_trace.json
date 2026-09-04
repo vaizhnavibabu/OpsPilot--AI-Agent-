@@ -1,0 +1,38 @@
+{
+  "ticket_id": "GOLDEN-013",
+  "ticket_text": "The billing details on the last receipt are incorrect",
+  "intent": "billing",
+  "intent_confidence": 0.17764744392592202,
+  "escalation": 0,
+  "escalation_probability": 0.24844927769290737,
+  "retrieved_documents": [],
+  "draft": "The ticket should be reviewed using the retrieved support policy. Relevant policy: ",
+  "critic_status": "FAIL",
+  "critic_reason": "No supporting policy was retrieved.",
+  "hitl_required": true,
+  "final_route": "HITL_REQUIRED",
+  "trace": [
+    {
+      "step": "ticket_received",
+      "status": "completed"
+    },
+    {
+      "step": "planning_and_tools",
+      "intent": "billing",
+      "escalation": 0
+    },
+    {
+      "step": "draft_created",
+      "status": "completed"
+    },
+    {
+      "step": "critic",
+      "status": "FAIL"
+    },
+    {
+      "step": "routing",
+      "route": "HITL_REQUIRED"
+    }
+  ],
+  "latency_sec": 0.021292686462402344
+}

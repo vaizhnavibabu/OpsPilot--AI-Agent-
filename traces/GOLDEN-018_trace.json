@@ -1,0 +1,49 @@
+{
+  "ticket_id": "GOLDEN-018",
+  "ticket_text": "My card payment was declined",
+  "intent": "payment_failure",
+  "intent_confidence": 0.1745124570711793,
+  "escalation": 0,
+  "escalation_probability": 0.25209712309168114,
+  "retrieved_documents": [
+    {
+      "source": "payment_failure_runbook.md",
+      "text": "# Payment Failure Runbook\n\n## Purpose\n\nThis runbook helps resolve payment failures and credit card declines.\n\n## Allowed\n\n- Instruct customers to update billing info in settings.\n- Suggest retrying the transaction or contacting their card issuer.\n- Explain common decline codes (e.g., insufficient funds).\n\n## Restricted\n\n- Do not manually collect credit card numbers in chat/email.\n- Do not process payments over unsecured communication channels.\n\n## Escalation\n\nEscalate to billing ops if system-wide gateway errors occur.",
+      "score": 0.5147554278373718
+    },
+    {
+      "source": "service_credit_policy.md",
+      "text": "# Service Credit Policy\n\n## Purpose\n\nThis policy handles requests for billing credit due to system downtime.\n\n## Allowed\n\n- Explain the calculation: credits are proportional to downtime duration.\n- Inform customers that credits will be applied to the next bill.\n\n## Restricted\n\n- Do not issue credits exceeding one month of subscription fees.\n- Do not issue cash or bank-wire refunds for downtime.\n\n## Escalation\n\nEscalate validation of downtime claims to the DevOps and Finance Leads.",
+      "score": 0.37823325395584106
+    }
+  ],
+  "draft": "The ticket should be reviewed using the retrieved support policy. Relevant policy: payment_failure_runbook.md, service_credit_policy.md",
+  "critic_status": "PASS",
+  "critic_reason": "Draft passed basic policy checks.",
+  "hitl_required": false,
+  "final_route": "RECOMMEND",
+  "trace": [
+    {
+      "step": "ticket_received",
+      "status": "completed"
+    },
+    {
+      "step": "planning_and_tools",
+      "intent": "payment_failure",
+      "escalation": 0
+    },
+    {
+      "step": "draft_created",
+      "status": "completed"
+    },
+    {
+      "step": "critic",
+      "status": "PASS"
+    },
+    {
+      "step": "routing",
+      "route": "RECOMMEND"
+    }
+  ],
+  "latency_sec": 0.020964384078979492
+}

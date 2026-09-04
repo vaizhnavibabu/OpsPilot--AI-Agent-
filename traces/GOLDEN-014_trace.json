@@ -1,0 +1,44 @@
+{
+  "ticket_id": "GOLDEN-014",
+  "ticket_text": "Please send me the invoices for the last 3 months",
+  "intent": "billing",
+  "intent_confidence": 0.16621588914033641,
+  "escalation": 0,
+  "escalation_probability": 0.32007553683713064,
+  "retrieved_documents": [
+    {
+      "source": "billing_invoice_policy.md",
+      "text": "# Billing Invoice Policy\n\n## Purpose\n\nThis policy guides how to handle inquiries about billing invoices.\n\n## Allowed\n\n- Help customers find their invoices in the portal.\n- Email copies of paid invoices to the registered billing contact.\n- Explain line items on invoices.\n\n## Restricted\n\n- Do not change invoice amounts without manager approval.\n- Do not send invoices to unverified email addresses.\n\n## Escalation\n\nEscalate disputes regarding invoice tax calculations or incorrect details.",
+      "score": 0.3596554696559906
+    }
+  ],
+  "draft": "The ticket should be reviewed using the retrieved support policy. Relevant policy: billing_invoice_policy.md",
+  "critic_status": "PASS",
+  "critic_reason": "Draft passed basic policy checks.",
+  "hitl_required": false,
+  "final_route": "RECOMMEND",
+  "trace": [
+    {
+      "step": "ticket_received",
+      "status": "completed"
+    },
+    {
+      "step": "planning_and_tools",
+      "intent": "billing",
+      "escalation": 0
+    },
+    {
+      "step": "draft_created",
+      "status": "completed"
+    },
+    {
+      "step": "critic",
+      "status": "PASS"
+    },
+    {
+      "step": "routing",
+      "route": "RECOMMEND"
+    }
+  ],
+  "latency_sec": 0.01916050910949707
+}

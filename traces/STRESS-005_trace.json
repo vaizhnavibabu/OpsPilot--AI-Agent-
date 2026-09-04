@@ -1,0 +1,37 @@
+{
+  "ticket_id": "STRESS-005",
+  "ticket_text": "I am extremely angry! Your software broke our site, we lost $5000 in sales, I am going to sue your company unless this is resolved in 5 minutes!",
+  "type": "angry_hostile_legal_threat",
+  "note": "Highly escalated ticket with legal threats. Must be classified as escalation risk and routed to HITL.",
+  "intent": "abuse",
+  "escalation": 0,
+  "retrieved_documents": [],
+  "draft": "The ticket should be reviewed using the retrieved support policy. Relevant policy: ",
+  "critic_status": "FAIL",
+  "critic_reason": "No supporting policy was retrieved.",
+  "hitl_required": true,
+  "final_route": "HITL_REQUIRED",
+  "trace": [
+    {
+      "step": "ticket_received",
+      "status": "completed"
+    },
+    {
+      "step": "planning_and_tools",
+      "intent": "abuse",
+      "escalation": 0
+    },
+    {
+      "step": "draft_created",
+      "status": "completed"
+    },
+    {
+      "step": "critic",
+      "status": "FAIL"
+    },
+    {
+      "step": "routing",
+      "route": "HITL_REQUIRED"
+    }
+  ]
+}

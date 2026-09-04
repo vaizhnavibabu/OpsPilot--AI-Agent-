@@ -1,0 +1,38 @@
+{
+  "ticket_id": "GOLDEN-015",
+  "ticket_text": "I want to change the company name on our billing invoices",
+  "intent": "subscription",
+  "intent_confidence": 0.10095503261172298,
+  "escalation": 0,
+  "escalation_probability": 0.25818287167337184,
+  "retrieved_documents": [],
+  "draft": "The ticket should be reviewed using the retrieved support policy. Relevant policy: ",
+  "critic_status": "FAIL",
+  "critic_reason": "No supporting policy was retrieved.",
+  "hitl_required": true,
+  "final_route": "HITL_REQUIRED",
+  "trace": [
+    {
+      "step": "ticket_received",
+      "status": "completed"
+    },
+    {
+      "step": "planning_and_tools",
+      "intent": "subscription",
+      "escalation": 0
+    },
+    {
+      "step": "draft_created",
+      "status": "completed"
+    },
+    {
+      "step": "critic",
+      "status": "FAIL"
+    },
+    {
+      "step": "routing",
+      "route": "HITL_REQUIRED"
+    }
+  ],
+  "latency_sec": 0.02559065818786621
+}

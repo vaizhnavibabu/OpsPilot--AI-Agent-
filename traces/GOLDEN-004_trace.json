@@ -1,0 +1,38 @@
+{
+  "ticket_id": "GOLDEN-004",
+  "ticket_text": "My login details do not work on the page",
+  "intent": "billing",
+  "intent_confidence": 0.09230014669358715,
+  "escalation": 0,
+  "escalation_probability": 0.24718063596864812,
+  "retrieved_documents": [],
+  "draft": "The ticket should be reviewed using the retrieved support policy. Relevant policy: ",
+  "critic_status": "FAIL",
+  "critic_reason": "No supporting policy was retrieved.",
+  "hitl_required": true,
+  "final_route": "HITL_REQUIRED",
+  "trace": [
+    {
+      "step": "ticket_received",
+      "status": "completed"
+    },
+    {
+      "step": "planning_and_tools",
+      "intent": "billing",
+      "escalation": 0
+    },
+    {
+      "step": "draft_created",
+      "status": "completed"
+    },
+    {
+      "step": "critic",
+      "status": "FAIL"
+    },
+    {
+      "step": "routing",
+      "route": "HITL_REQUIRED"
+    }
+  ],
+  "latency_sec": 0.08650922775268555
+}

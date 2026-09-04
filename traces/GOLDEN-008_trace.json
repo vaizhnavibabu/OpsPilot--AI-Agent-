@@ -1,0 +1,38 @@
+{
+  "ticket_id": "GOLDEN-008",
+  "ticket_text": "My team members are having access problems logging in",
+  "intent": "access",
+  "intent_confidence": 0.14350210947841258,
+  "escalation": 0,
+  "escalation_probability": 0.29034415005681297,
+  "retrieved_documents": [],
+  "draft": "The customer appears to have an account access problem. Provide the standard password recovery process and avoid requesting sensitive authentication information. Relevant policy: ",
+  "critic_status": "FAIL",
+  "critic_reason": "No supporting policy was retrieved.",
+  "hitl_required": true,
+  "final_route": "HITL_REQUIRED",
+  "trace": [
+    {
+      "step": "ticket_received",
+      "status": "completed"
+    },
+    {
+      "step": "planning_and_tools",
+      "intent": "access",
+      "escalation": 0
+    },
+    {
+      "step": "draft_created",
+      "status": "completed"
+    },
+    {
+      "step": "critic",
+      "status": "FAIL"
+    },
+    {
+      "step": "routing",
+      "route": "HITL_REQUIRED"
+    }
+  ],
+  "latency_sec": 0.05038332939147949
+}

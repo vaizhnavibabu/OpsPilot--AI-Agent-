@@ -1,0 +1,38 @@
+{
+  "ticket_id": "GOLDEN-012",
+  "ticket_text": "Can you update the VAT number on our invoice",
+  "intent": "billing",
+  "intent_confidence": 0.11369044293629325,
+  "escalation": 0,
+  "escalation_probability": 0.2743669418887913,
+  "retrieved_documents": [],
+  "draft": "The ticket should be reviewed using the retrieved support policy. Relevant policy: ",
+  "critic_status": "FAIL",
+  "critic_reason": "No supporting policy was retrieved.",
+  "hitl_required": true,
+  "final_route": "HITL_REQUIRED",
+  "trace": [
+    {
+      "step": "ticket_received",
+      "status": "completed"
+    },
+    {
+      "step": "planning_and_tools",
+      "intent": "billing",
+      "escalation": 0
+    },
+    {
+      "step": "draft_created",
+      "status": "completed"
+    },
+    {
+      "step": "critic",
+      "status": "FAIL"
+    },
+    {
+      "step": "routing",
+      "route": "HITL_REQUIRED"
+    }
+  ],
+  "latency_sec": 0.027719736099243164
+}

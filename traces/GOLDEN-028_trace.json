@@ -1,0 +1,38 @@
+{
+  "ticket_id": "GOLDEN-028",
+  "ticket_text": "Accidentally charged twice, please refund the second payment",
+  "intent": "refund",
+  "intent_confidence": 0.19502344602924032,
+  "escalation": 1,
+  "escalation_probability": 0.5219470257017718,
+  "retrieved_documents": [],
+  "draft": "The customer is requesting a refund. The request should be reviewed by the appropriate human team before any refund decision is made. Relevant policy: ",
+  "critic_status": "FAIL",
+  "critic_reason": "No supporting policy was retrieved.",
+  "hitl_required": true,
+  "final_route": "HITL_REQUIRED",
+  "trace": [
+    {
+      "step": "ticket_received",
+      "status": "completed"
+    },
+    {
+      "step": "planning_and_tools",
+      "intent": "refund",
+      "escalation": 1
+    },
+    {
+      "step": "draft_created",
+      "status": "completed"
+    },
+    {
+      "step": "critic",
+      "status": "FAIL"
+    },
+    {
+      "step": "routing",
+      "route": "HITL_REQUIRED"
+    }
+  ],
+  "latency_sec": 0.040099143981933594
+}

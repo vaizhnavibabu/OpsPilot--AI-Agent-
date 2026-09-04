@@ -1,0 +1,44 @@
+{
+  "ticket_id": "GOLDEN-019",
+  "ticket_text": "The payment did not go through",
+  "intent": "payment_failure",
+  "intent_confidence": 0.20114576981903606,
+  "escalation": 0,
+  "escalation_probability": 0.2934460511315848,
+  "retrieved_documents": [
+    {
+      "source": "payment_failure_runbook.md",
+      "text": "# Payment Failure Runbook\n\n## Purpose\n\nThis runbook helps resolve payment failures and credit card declines.\n\n## Allowed\n\n- Instruct customers to update billing info in settings.\n- Suggest retrying the transaction or contacting their card issuer.\n- Explain common decline codes (e.g., insufficient funds).\n\n## Restricted\n\n- Do not manually collect credit card numbers in chat/email.\n- Do not process payments over unsecured communication channels.\n\n## Escalation\n\nEscalate to billing ops if system-wide gateway errors occur.",
+      "score": 0.3779910206794739
+    }
+  ],
+  "draft": "The ticket should be reviewed using the retrieved support policy. Relevant policy: payment_failure_runbook.md",
+  "critic_status": "PASS",
+  "critic_reason": "Draft passed basic policy checks.",
+  "hitl_required": false,
+  "final_route": "RECOMMEND",
+  "trace": [
+    {
+      "step": "ticket_received",
+      "status": "completed"
+    },
+    {
+      "step": "planning_and_tools",
+      "intent": "payment_failure",
+      "escalation": 0
+    },
+    {
+      "step": "draft_created",
+      "status": "completed"
+    },
+    {
+      "step": "critic",
+      "status": "PASS"
+    },
+    {
+      "step": "routing",
+      "route": "RECOMMEND"
+    }
+  ],
+  "latency_sec": 0.020178794860839844
+}

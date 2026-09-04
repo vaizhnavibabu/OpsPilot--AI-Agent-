@@ -1,0 +1,242 @@
+[
+    {
+        "ticket_id": "GOLDEN-001",
+        "text": "I forgot my password and cannot login",
+        "expected_intent": "access",
+        "expected_escalation": 0,
+        "expected_route": "RECOMMEND",
+        "expected_policy": "password_policy.md"
+    },
+    {
+        "ticket_id": "GOLDEN-002",
+        "text": "I cannot sign into my account",
+        "expected_intent": "access",
+        "expected_escalation": 0,
+        "expected_route": "RECOMMEND",
+        "expected_policy": "password_policy.md"
+    },
+    {
+        "ticket_id": "GOLDEN-003",
+        "text": "How can I reset my password",
+        "expected_intent": "access",
+        "expected_escalation": 0,
+        "expected_route": "RECOMMEND",
+        "expected_policy": "password_policy.md"
+    },
+    {
+        "ticket_id": "GOLDEN-004",
+        "text": "My login details do not work on the page",
+        "expected_intent": "access",
+        "expected_escalation": 0,
+        "expected_route": "RECOMMEND",
+        "expected_policy": "password_policy.md"
+    },
+    {
+        "ticket_id": "GOLDEN-005",
+        "text": "I am locked out of my portal due to password attempts",
+        "expected_intent": "access",
+        "expected_escalation": 0,
+        "expected_route": "RECOMMEND",
+        "expected_policy": "password_policy.md"
+    },
+    {
+        "ticket_id": "GOLDEN-006",
+        "text": "Cannot login to my account, password reset link not received",
+        "expected_intent": "access",
+        "expected_escalation": 0,
+        "expected_route": "RECOMMEND",
+        "expected_policy": "password_policy.md"
+    },
+    {
+        "ticket_id": "GOLDEN-007",
+        "text": "How to perform an account password recovery",
+        "expected_intent": "access",
+        "expected_escalation": 0,
+        "expected_route": "RECOMMEND",
+        "expected_policy": "password_policy.md"
+    },
+    {
+        "ticket_id": "GOLDEN-008",
+        "text": "My team members are having access problems logging in",
+        "expected_intent": "access",
+        "expected_escalation": 0,
+        "expected_route": "RECOMMEND",
+        "expected_policy": "password_policy.md"
+    },
+    {
+        "ticket_id": "GOLDEN-009",
+        "text": "My invoice is missing",
+        "expected_intent": "billing",
+        "expected_escalation": 0,
+        "expected_route": "RECOMMEND",
+        "expected_policy": "billing_invoice_policy.md"
+    },
+    {
+        "ticket_id": "GOLDEN-010",
+        "text": "Where can I download my invoice",
+        "expected_intent": "billing",
+        "expected_escalation": 0,
+        "expected_route": "RECOMMEND",
+        "expected_policy": "billing_invoice_policy.md"
+    },
+    {
+        "ticket_id": "GOLDEN-011",
+        "text": "I need a copy of my billing invoice",
+        "expected_intent": "billing",
+        "expected_escalation": 0,
+        "expected_route": "RECOMMEND",
+        "expected_policy": "billing_invoice_policy.md"
+    },
+    {
+        "ticket_id": "GOLDEN-012",
+        "text": "Can you update the VAT number on our invoice",
+        "expected_intent": "billing",
+        "expected_escalation": 0,
+        "expected_route": "RECOMMEND",
+        "expected_policy": "billing_invoice_policy.md"
+    },
+    {
+        "ticket_id": "GOLDEN-013",
+        "text": "The billing details on the last receipt are incorrect",
+        "expected_intent": "billing",
+        "expected_escalation": 0,
+        "expected_route": "RECOMMEND",
+        "expected_policy": "billing_invoice_policy.md"
+    },
+    {
+        "ticket_id": "GOLDEN-014",
+        "text": "Please send me the invoices for the last 3 months",
+        "expected_intent": "billing",
+        "expected_escalation": 0,
+        "expected_route": "RECOMMEND",
+        "expected_policy": "billing_invoice_policy.md"
+    },
+    {
+        "ticket_id": "GOLDEN-015",
+        "text": "I want to change the company name on our billing invoices",
+        "expected_intent": "billing",
+        "expected_escalation": 0,
+        "expected_route": "RECOMMEND",
+        "expected_policy": "billing_invoice_policy.md"
+    },
+    {
+        "ticket_id": "GOLDEN-016",
+        "text": "Where is the invoice history tab in my settings",
+        "expected_intent": "billing",
+        "expected_escalation": 0,
+        "expected_route": "RECOMMEND",
+        "expected_policy": "billing_invoice_policy.md"
+    },
+    {
+        "ticket_id": "GOLDEN-017",
+        "text": "My payment failed",
+        "expected_intent": "payment_failure",
+        "expected_escalation": 0,
+        "expected_route": "RECOMMEND",
+        "expected_policy": "payment_failure_runbook.md"
+    },
+    {
+        "ticket_id": "GOLDEN-018",
+        "text": "My card payment was declined",
+        "expected_intent": "payment_failure",
+        "expected_escalation": 0,
+        "expected_route": "RECOMMEND",
+        "expected_policy": "payment_failure_runbook.md"
+    },
+    {
+        "ticket_id": "GOLDEN-019",
+        "text": "The payment did not go through",
+        "expected_intent": "payment_failure",
+        "expected_escalation": 0,
+        "expected_route": "RECOMMEND",
+        "expected_policy": "payment_failure_runbook.md"
+    },
+    {
+        "ticket_id": "GOLDEN-020",
+        "text": "My credit card was rejected during renewal check",
+        "expected_intent": "payment_failure",
+        "expected_escalation": 0,
+        "expected_route": "RECOMMEND",
+        "expected_policy": "payment_failure_runbook.md"
+    },
+    {
+        "ticket_id": "GOLDEN-021",
+        "text": "Why did my monthly subscription fee fail to charge",
+        "expected_intent": "payment_failure",
+        "expected_escalation": 0,
+        "expected_route": "RECOMMEND",
+        "expected_policy": "payment_failure_runbook.md"
+    },
+    {
+        "ticket_id": "GOLDEN-022",
+        "text": "I received a billing failed email but card is active",
+        "expected_intent": "payment_failure",
+        "expected_escalation": 0,
+        "expected_route": "RECOMMEND",
+        "expected_policy": "payment_failure_runbook.md"
+    },
+    {
+        "ticket_id": "GOLDEN-023",
+        "text": "Transaction was declined when attempting payment",
+        "expected_intent": "payment_failure",
+        "expected_escalation": 0,
+        "expected_route": "RECOMMEND",
+        "expected_policy": "payment_failure_runbook.md"
+    },
+    {
+        "ticket_id": "GOLDEN-024",
+        "text": "Failed payment notification received, how to retry card",
+        "expected_intent": "payment_failure",
+        "expected_escalation": 0,
+        "expected_route": "RECOMMEND",
+        "expected_policy": "payment_failure_runbook.md"
+    },
+    {
+        "ticket_id": "GOLDEN-025",
+        "text": "I want a refund for my subscription",
+        "expected_intent": "refund",
+        "expected_escalation": 1,
+        "expected_route": "HITL_REQUIRED",
+        "expected_policy": "refund_policy.md"
+    },
+    {
+        "ticket_id": "GOLDEN-026",
+        "text": "Please refund my annual subscription",
+        "expected_intent": "refund",
+        "expected_escalation": 1,
+        "expected_route": "HITL_REQUIRED",
+        "expected_policy": "refund_policy.md"
+    },
+    {
+        "ticket_id": "GOLDEN-027",
+        "text": "I need my subscription payment refunded",
+        "expected_intent": "refund",
+        "expected_escalation": 1,
+        "expected_route": "HITL_REQUIRED",
+        "expected_policy": "refund_policy.md"
+    },
+    {
+        "ticket_id": "GOLDEN-028",
+        "text": "Accidentally charged twice, please refund the second payment",
+        "expected_intent": "refund",
+        "expected_escalation": 1,
+        "expected_route": "HITL_REQUIRED",
+        "expected_policy": "refund_policy.md"
+    },
+    {
+        "ticket_id": "GOLDEN-029",
+        "text": "I cancelled last week and want a refund of prorated amount",
+        "expected_intent": "refund",
+        "expected_escalation": 1,
+        "expected_route": "HITL_REQUIRED",
+        "expected_policy": "refund_policy.md"
+    },
+    {
+        "ticket_id": "GOLDEN-030",
+        "text": "Requesting a refund for the unused premium features",
+        "expected_intent": "refund",
+        "expected_escalation": 1,
+        "expected_route": "HITL_REQUIRED",
+        "expected_policy": "refund_policy.md"
+    }
+]

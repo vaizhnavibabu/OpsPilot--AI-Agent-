@@ -1,0 +1,117 @@
+ticket_id,text,intent,escalation
+T001,I forgot my password and cannot login,access,0
+T002,I cannot sign into my account,access,0
+T003,How can I reset my password,access,0
+T004,My login details do not work on the page,access,0
+T005,I am locked out of my portal due to password attempts,access,0
+T006,"Cannot login to my account, password reset link not received",access,0
+T007,How to perform an account password recovery,access,0
+T008,My team members are having access problems logging in,access,0
+T009,My invoice is missing,billing,0
+T010,Where can I download my invoice,billing,0
+T011,I need a copy of my billing invoice,billing,0
+T012,Can you update the VAT number on our invoice,billing,0
+T013,The billing details on the last receipt are incorrect,billing,0
+T014,Please send me the invoices for the last 3 months,billing,0
+T015,I want to change the company name on our billing invoices,billing,0
+T016,Where is the invoice history tab in my settings,billing,0
+T017,My payment failed,payment_failure,0
+T018,My card payment was declined,payment_failure,0
+T019,The payment did not go through,payment_failure,0
+T020,My credit card was rejected during renewal check,payment_failure,0
+T021,Why did my monthly subscription fee fail to charge,payment_failure,0
+T022,I received a billing failed email but card is active,payment_failure,0
+T023,Transaction was declined when attempting payment,payment_failure,0
+T024,"Failed payment notification received, how to retry card",payment_failure,0
+T025,I want a refund for my subscription,refund,1
+T026,Please refund my annual subscription,refund,1
+T027,I need my subscription payment refunded,refund,1
+T028,"Accidentally charged twice, please refund the second payment",refund,1
+T029,I cancelled last week and want a refund of prorated amount,refund,1
+T030,Requesting a refund for the unused premium features,refund,1
+T031,Can I get a refund of my payment from yesterday,refund,1
+T032,"The software is not what I expected, request refund",refund,1
+T033,Our production system is completely down,outage,1
+T034,The service is unavailable for our team,outage,1
+T035,Production is experiencing a major outage,outage,1
+T036,"Critical system crash, API returning 500 error",outage,1
+T037,"OpsPilot dashboard is not loading, returning gateway error",outage,1
+T038,"We cannot access our environment, system down",outage,1
+T039,"Major breakdown, servers are not responding to traffic",outage,1
+T040,Production application is down and offline right now,outage,1
+T041,How do I upgrade my subscription,subscription,0
+T042,I want to change my subscription plan,subscription,0
+T043,Can I upgrade my current plan,subscription,0
+T044,How to add more seats/licenses to my plan,subscription,0
+T045,Moving from starter package to pro package info,subscription,0
+T046,We want to expand our subscription tier to enterprise level,subscription,0
+T047,Is there an annual subscription package upgrade discount,subscription,0
+T048,I need steps to choose the premium subscription package,subscription,0
+T049,I think someone accessed my account,security,1
+T050,There is suspicious activity on my account,security,1
+T051,I believe my account has been compromised,security,1
+T052,Unrecognized login from different country detected,security,1
+T053,"My API key was leaked publicly on GitHub, emergency lockout",security,1
+T054,"Suspicious session active on account, please terminate session",security,1
+T055,Unauthorised transactions and changes made to my admin portal,security,1
+T056,I noticed security settings modified without my consent,security,1
+T057,What are the API rate limits,api,0
+T058,How many API requests can I make,api,0
+T059,What is the API request limit,api,0
+T060,Receiving rate limit exceeded message on endpoint,api,0
+T061,What is the standard quota for API calls,api,0
+T062,Where is the API rate limits documentation,api,0
+T063,How do I monitor rate limits per minute,api,0
+T064,Rate limit specs for premium account keys,api,0
+T065,What is the standard support response time,sla,0
+T066,What SLA guarantees do you provide for response speed,sla,0
+T067,Ticket response SLA levels for normal accounts,sla,0
+T068,Our ticket is breaching the 24-hour response SLA,sla,0
+T069,How fast does support respond to P1 issues,sla,0
+T070,What are the response time parameters in the service SLA,sla,0
+T071,SLA guarantee for standard support response window,sla,0
+T072,How do I check our SLA response window,sla,0
+T073,I want to delete my account data under GDPR,gdpr,0
+T074,Request to export my data according to GDPR rights,gdpr,0
+T075,How do I request complete data erasure,gdpr,0
+T076,Where is the privacy center for GDPR deletion request,gdpr,0
+T077,Please purge all my personal identification details,gdpr,0
+T078,I need an export of my account activity data,gdpr,0
+T079,GDPR compliance data export instructions,gdpr,0
+T080,Erasure request under right to be forgotten,gdpr,0
+T081,We are a platinum partner and need TAM contact,routing,1
+T082,Contact details for our Technical Account Manager,routing,1
+T083,"Enterprise account query, route to TAM team",routing,1
+T084,TAM support line for enterprise-tier organization,routing,1
+T085,Assigned TAM request for premium partner account,routing,1
+T086,"We pay for premium TAM support, route this",routing,1
+T087,TAM team routing for enterprise account integration,routing,1
+T088,Need TAM engineer review on contract SLA check,routing,1
+T089,Can you debug my custom javascript webhook code,custom_dev,0
+T090,Why isn't our custom script integration working,custom_dev,0
+T091,Need help refactoring our API integration python script,custom_dev,0
+T092,Do you write custom plugins for customers,custom_dev,0
+T093,Help with custom developer integration code errors,custom_dev,0
+T094,Can support review our team's integration script,custom_dev,0
+T095,Custom client code debugging support parameters,custom_dev,0
+T096,How to troubleshoot client side script bugs,custom_dev,0
+T097,Someone is using your platform to send spam emails,abuse,1
+T098,Report phishing site hosted on your service,abuse,1
+T099,Phishing report regarding platform user account,abuse,1
+T100,I want to report an abuse violation of terms,abuse,1
+T101,"Suspicious spam account active on system, alert",abuse,1
+T102,phishing URLs sent from an account hosted by you,abuse,1
+T103,Trust and safety report: abuse and harassment,abuse,1
+T104,Alert: system abuse and mail spam violation,abuse,1
+T105,Requesting billing credit for downtime yesterday,credits,0
+T106,SLA credit calculation due to server outage,credits,0
+T107,How to apply for service credits for network outage,credits,0
+T108,Downtime credit compensation on monthly invoice,credits,0
+T109,Refund or credit application for system breach downtime,credits,0
+T110,Downtime compensation credit on our billing profile,credits,0
+T111,I want to cancel my subscription account,cancellation,0
+T112,Where is the cancellation link in the dashboard,cancellation,0
+T113,Please cancel my membership immediately,cancellation,0
+T114,How to terminate my account registration,cancellation,0
+T115,I wish to end my subscription billing cycle,cancellation,0
+T116,Close my account profile and stop billing,cancellation,0

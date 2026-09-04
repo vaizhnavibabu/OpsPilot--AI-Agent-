@@ -1,0 +1,37 @@
+{
+  "ticket_id": "STRESS-006",
+  "ticket_text": "hello how are you",
+  "type": "empty_or_gibberish",
+  "note": "Gibberish or chit-chat query. Tests behavior when confidence is low.",
+  "intent": "sla",
+  "escalation": 0,
+  "retrieved_documents": [],
+  "draft": "The ticket should be reviewed using the retrieved support policy. Relevant policy: ",
+  "critic_status": "FAIL",
+  "critic_reason": "No supporting policy was retrieved.",
+  "hitl_required": true,
+  "final_route": "HITL_REQUIRED",
+  "trace": [
+    {
+      "step": "ticket_received",
+      "status": "completed"
+    },
+    {
+      "step": "planning_and_tools",
+      "intent": "sla",
+      "escalation": 0
+    },
+    {
+      "step": "draft_created",
+      "status": "completed"
+    },
+    {
+      "step": "critic",
+      "status": "FAIL"
+    },
+    {
+      "step": "routing",
+      "route": "HITL_REQUIRED"
+    }
+  ]
+}

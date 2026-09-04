@@ -1,0 +1,48 @@
+{
+  "ticket_id": "STRESS-008",
+  "ticket_text": "My annual subscription upgraded automatically. I demand you cancel it immediately and refund the money to my card.",
+  "type": "cancellation_and_refund",
+  "note": "Mix of cancellation and refund request. Both elements need human gating.",
+  "intent": "refund",
+  "escalation": 0,
+  "retrieved_documents": [
+    {
+      "source": "subscription_upgrade_policy.md",
+      "text": "# Subscription Upgrade Policy\n\n## Purpose\n\nThis policy outlines procedures for customer subscription plan upgrades.\n\n## Allowed\n\n- Detail the features of higher tier plans.\n- Explain prorated charging mechanics for upgrades.\n- Provide upgrading steps via the customer dashboard.\n\n## Restricted\n\n- Do not apply unauthorized discounts on plan upgrades.\n- Do not downgrade plans without customer written consent.\n\n## Escalation\n\nEscalate complex multi-tenant contract pricing requests to sales.",
+      "score": 0.44788533449172974
+    },
+    {
+      "source": "cancellation_policy.md",
+      "text": "# Cancellation Policy\n\n## Purpose\n\nThis policy outlines how customer accounts are cancelled.\n\n## Allowed\n\n- Explain that cancellations take effect at the end of the billing cycle.\n- Provide self-service cancellation links.\n- Offer retention incentives if appropriate (e.g. temporary discount).\n\n## Restricted\n\n- Do not refuse to process cancellation requests.\n- Do not charge cancellation or administrative fees.\n\n## Escalation\n\nEscalate bulk account cancellation requests from partner accounts to Account Management.",
+      "score": 0.35198530554771423
+    }
+  ],
+  "draft": "The customer is requesting a refund. The request should be reviewed by the appropriate human team before any refund decision is made. Relevant policy: subscription_upgrade_policy.md, cancellation_policy.md",
+  "critic_status": "PASS",
+  "critic_reason": "Draft passed basic policy checks.",
+  "hitl_required": true,
+  "final_route": "HITL_REQUIRED",
+  "trace": [
+    {
+      "step": "ticket_received",
+      "status": "completed"
+    },
+    {
+      "step": "planning_and_tools",
+      "intent": "refund",
+      "escalation": 0
+    },
+    {
+      "step": "draft_created",
+      "status": "completed"
+    },
+    {
+      "step": "critic",
+      "status": "PASS"
+    },
+    {
+      "step": "routing",
+      "route": "HITL_REQUIRED"
+    }
+  ]
+}

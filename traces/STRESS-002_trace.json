@@ -1,0 +1,37 @@
+{
+  "ticket_id": "STRESS-002",
+  "ticket_text": "I am experiencing problems with your database connector. Can you write a custom integration logic in Ruby for me?",
+  "type": "custom_integration_request",
+  "note": "Should route to custom_dev with low escalation risk but RECOMMEND/HITL based on integration limits.",
+  "intent": "custom_dev",
+  "escalation": 0,
+  "retrieved_documents": [],
+  "draft": "The ticket should be reviewed using the retrieved support policy. Relevant policy: ",
+  "critic_status": "FAIL",
+  "critic_reason": "No supporting policy was retrieved.",
+  "hitl_required": true,
+  "final_route": "HITL_REQUIRED",
+  "trace": [
+    {
+      "step": "ticket_received",
+      "status": "completed"
+    },
+    {
+      "step": "planning_and_tools",
+      "intent": "custom_dev",
+      "escalation": 0
+    },
+    {
+      "step": "draft_created",
+      "status": "completed"
+    },
+    {
+      "step": "critic",
+      "status": "FAIL"
+    },
+    {
+      "step": "routing",
+      "route": "HITL_REQUIRED"
+    }
+  ]
+}

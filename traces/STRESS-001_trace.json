@@ -1,0 +1,53 @@
+{
+  "ticket_id": "STRESS-001",
+  "ticket_text": "Please delete my account data. But also refund my payment, and tell me the API rate limit",
+  "type": "ambiguous_multiple_intents",
+  "note": "Mentions GDPR deletion, Refund, and API limit. Tests classifier prioritization and RAG routing.",
+  "intent": "api",
+  "escalation": 0,
+  "retrieved_documents": [
+    {
+      "source": "api_limit_policy.md",
+      "text": "# API Limit Policy\n\n## Purpose\n\nThis policy specifies the API rate limits and request quotas.\n\n## Allowed\n\n- Quote the standard rate limits: 100 requests per minute.\n- Explain how to check current usage headers.\n- Suggest optimization strategies to reduce API calls.\n\n## Restricted\n\n- Do not manually increase API rate limits for individual keys.\n- Do not disclose internal API endpoints.\n\n## Escalation\n\nEscalate requests for custom high-volume API quotas to the engineering team.",
+      "score": 0.4593469500541687
+    },
+    {
+      "source": "gdpr_data_request_policy.md",
+      "text": "# GDPR Data Request Policy\n\n## Purpose\n\nThis policy guides responses to GDPR data rights inquiries.\n\n## Allowed\n\n- Explain the data export and erasure process.\n- Provide the link to the Privacy Center to submit formal requests.\n\n## Restricted\n\n- Do not manually delete database records upon informal request.\n- Do not share user data without verifying customer identity.\n\n## Escalation\n\nRoute formal legal deletion/GDPR notices directly to the Legal & Privacy Officer.",
+      "score": 0.3896694779396057
+    },
+    {
+      "source": "cancellation_policy.md",
+      "text": "# Cancellation Policy\n\n## Purpose\n\nThis policy outlines how customer accounts are cancelled.\n\n## Allowed\n\n- Explain that cancellations take effect at the end of the billing cycle.\n- Provide self-service cancellation links.\n- Offer retention incentives if appropriate (e.g. temporary discount).\n\n## Restricted\n\n- Do not refuse to process cancellation requests.\n- Do not charge cancellation or administrative fees.\n\n## Escalation\n\nEscalate bulk account cancellation requests from partner accounts to Account Management.",
+      "score": 0.3777555227279663
+    }
+  ],
+  "draft": "The ticket should be reviewed using the retrieved support policy. Relevant policy: api_limit_policy.md, gdpr_data_request_policy.md, cancellation_policy.md",
+  "critic_status": "PASS",
+  "critic_reason": "Draft passed basic policy checks.",
+  "hitl_required": false,
+  "final_route": "RECOMMEND",
+  "trace": [
+    {
+      "step": "ticket_received",
+      "status": "completed"
+    },
+    {
+      "step": "planning_and_tools",
+      "intent": "api",
+      "escalation": 0
+    },
+    {
+      "step": "draft_created",
+      "status": "completed"
+    },
+    {
+      "step": "critic",
+      "status": "PASS"
+    },
+    {
+      "step": "routing",
+      "route": "RECOMMEND"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "ticket_id": "STRESS-004",
+  "ticket_text": "System error code 98319-XJ is blocking our database syncing on standard ports.",
+  "type": "missing_policy",
+  "note": "No policy document exists for database connector port issues. Tests weak retrieval handling.",
+  "intent": "outage",
+  "escalation": 0,
+  "retrieved_documents": [],
+  "draft": "The customer has reported a possible production outage. The incident should be checked by the appropriate operations team. Do not claim that the incident is resolved without confirmation. Relevant policy: ",
+  "critic_status": "FAIL",
+  "critic_reason": "No supporting policy was retrieved.",
+  "hitl_required": true,
+  "final_route": "HITL_REQUIRED",
+  "trace": [
+    {
+      "step": "ticket_received",
+      "status": "completed"
+    },
+    {
+      "step": "planning_and_tools",
+      "intent": "outage",
+      "escalation": 0
+    },
+    {
+      "step": "draft_created",
+      "status": "completed"
+    },
+    {
+      "step": "critic",
+      "status": "FAIL"
+    },
+    {
+      "step": "routing",
+      "route": "HITL_REQUIRED"
+    }
+  ]
+}

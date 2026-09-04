@@ -1,0 +1,49 @@
+{
+  "ticket_id": "GOLDEN-026",
+  "ticket_text": "Please refund my annual subscription",
+  "intent": "refund",
+  "intent_confidence": 0.19365168117887563,
+  "escalation": 0,
+  "escalation_probability": 0.485082537472611,
+  "retrieved_documents": [
+    {
+      "source": "refund_policy.md",
+      "text": "# Refund Policy\n\n## Purpose\n\nThis policy describes how subscription refunds, plan charge refunds, and payment refund requests are handled.\n\n## Allowed\n\n- Explain subscription refund eligibility and refund rules.\n- Explain the refund process for credit card or invoice charges.\n- Route subscription refund requests or charge disputes to the appropriate human billing team.\n\n## Restricted\n\n- Do not issue a refund for a plan automatically.\n- Do not promise that a subscription refund will be approved.\n\n## Escalation\n\nAll refund requests for annual or monthly subscription plans require human billing team review.",
+      "score": 0.48359414935112
+    },
+    {
+      "source": "cancellation_policy.md",
+      "text": "# Cancellation Policy\n\n## Purpose\n\nThis policy outlines how customer accounts are cancelled.\n\n## Allowed\n\n- Explain that cancellations take effect at the end of the billing cycle.\n- Provide self-service cancellation links.\n- Offer retention incentives if appropriate (e.g. temporary discount).\n\n## Restricted\n\n- Do not refuse to process cancellation requests.\n- Do not charge cancellation or administrative fees.\n\n## Escalation\n\nEscalate bulk account cancellation requests from partner accounts to Account Management.",
+      "score": 0.38446715474128723
+    }
+  ],
+  "draft": "The customer is requesting a refund. The request should be reviewed by the appropriate human team before any refund decision is made. Relevant policy: refund_policy.md, cancellation_policy.md",
+  "critic_status": "PASS",
+  "critic_reason": "Draft passed basic policy checks.",
+  "hitl_required": true,
+  "final_route": "HITL_REQUIRED",
+  "trace": [
+    {
+      "step": "ticket_received",
+      "status": "completed"
+    },
+    {
+      "step": "planning_and_tools",
+      "intent": "refund",
+      "escalation": 0
+    },
+    {
+      "step": "draft_created",
+      "status": "completed"
+    },
+    {
+      "step": "critic",
+      "status": "PASS"
+    },
+    {
+      "step": "routing",
+      "route": "HITL_REQUIRED"
+    }
+  ],
+  "latency_sec": 0.03138160705566406
+}

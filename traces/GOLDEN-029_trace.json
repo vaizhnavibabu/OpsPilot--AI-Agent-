@@ -1,0 +1,44 @@
+{
+  "ticket_id": "GOLDEN-029",
+  "ticket_text": "I cancelled last week and want a refund of prorated amount",
+  "intent": "refund",
+  "intent_confidence": 0.1864386091441496,
+  "escalation": 1,
+  "escalation_probability": 0.5306888874940177,
+  "retrieved_documents": [
+    {
+      "source": "cancellation_policy.md",
+      "text": "# Cancellation Policy\n\n## Purpose\n\nThis policy outlines how customer accounts are cancelled.\n\n## Allowed\n\n- Explain that cancellations take effect at the end of the billing cycle.\n- Provide self-service cancellation links.\n- Offer retention incentives if appropriate (e.g. temporary discount).\n\n## Restricted\n\n- Do not refuse to process cancellation requests.\n- Do not charge cancellation or administrative fees.\n\n## Escalation\n\nEscalate bulk account cancellation requests from partner accounts to Account Management.",
+      "score": 0.3539615273475647
+    }
+  ],
+  "draft": "The customer is requesting a refund. The request should be reviewed by the appropriate human team before any refund decision is made. Relevant policy: cancellation_policy.md",
+  "critic_status": "PASS",
+  "critic_reason": "Draft passed basic policy checks.",
+  "hitl_required": true,
+  "final_route": "HITL_REQUIRED",
+  "trace": [
+    {
+      "step": "ticket_received",
+      "status": "completed"
+    },
+    {
+      "step": "planning_and_tools",
+      "intent": "refund",
+      "escalation": 1
+    },
+    {
+      "step": "draft_created",
+      "status": "completed"
+    },
+    {
+      "step": "critic",
+      "status": "PASS"
+    },
+    {
+      "step": "routing",
+      "route": "HITL_REQUIRED"
+    }
+  ],
+  "latency_sec": 0.045278072357177734
+}
